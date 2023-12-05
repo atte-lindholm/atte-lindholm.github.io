@@ -24,6 +24,8 @@ body {
     padding-top: 60px;
 }
 
+
+
 .menu-icon {
     position: fixed;
     top: 10px;
@@ -37,16 +39,17 @@ body {
 }
 
 .sidebar a {
-    padding: 8px 32px 8px 8px;
+    padding: 16px 32px 16px 16px;
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .sidebar a:hover {
-    color: #8a8989;
+    color: #747474;
 }
 
 .page-info {
