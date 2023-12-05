@@ -1,16 +1,53 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
     overflow-x: hidden;
     background-image: url("./images/defqon_red.jpeg");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 4;
+    color: #fff;
+    background-color: rgba(34, 34, 34, 0.8);
+    transition: right 0.5s ease; /* Added transition property */
+}
+
+.sidebar a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #8a8989;
+}
 
 .page-info {
     background-color: rgba(51, 51, 51, 0.8);
@@ -21,21 +58,12 @@ body {
     flex: 1;
 }
 
-
-
 .page-info-header {
-    padding: 20px; /* Add padding to create space for the text */
+    padding: 20px;
 }
-
-.page-info-text {
-    padding: 20px; /* Add padding to create space for the text */
-}
-
-
-
 
 .top-bar {
-    background-color: rgba(51, 51, 51, 1); /* Use rgba to set the background color with an alpha value */
+    background-color: rgba(51, 51, 51, 1);
     color: #fff;
     padding: 10px;
     text-align: left;
@@ -43,8 +71,6 @@ body {
     position: relative;
     z-index: 1;
 }
-
-
 
 .footer {
     background-color: #333;
@@ -64,18 +90,14 @@ body {
     align-items: flex-start;
     margin-top: auto;
     flex-direction: row;
-
-
 }
 
-
-.contact-info{
+.contact-info {
     margin: 20px;
 }
 
 .instagram-post {
     margin: 50px;
-
 }
 
 .contact-info h3 {
@@ -90,16 +112,14 @@ body {
 }
 
 .text-at-top {
-    flex: 1; /* Takes up equal space on the left */
+    flex: 1;
     text-align: left;
-    padding-right: 20px; /* Add some space to separate from the Instagram post */
+    padding-right: 20px;
 }
 
 .instagram-post {
-    margin-left: auto; /* Move the Instagram post to the right */
+    margin-left: auto;
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .page-info {
@@ -113,7 +133,6 @@ body {
     .page-info p {
         font-size: 14px;
     }
-
 
     .footer,
     .secondary-footer {

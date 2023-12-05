@@ -9,13 +9,22 @@
     <script src="scripts.js"></script>
 
 </head>
-<body class="body-no-scroll">
+<body>
     <div class="top-bar">
         <h1>Atte Lindholm</h1>
     </div>
 
+    <div class="sidebar" onmouseenter="openSidebar()" onmouseleave="closeSidebar()" id="sidebar">
+        <div class="menu-icon" onmouseenter="openSidebar()" onclick="toggleSidebar()">☰</div>
+        <a href="https://github.com/atte-lindholm" target="_blank">Github</a>
+        <a href="#" onclick="scrollToBottom(event)">Contact</a>
+    </div>
+
+
+
     <div class="page-info">
         <div class="page-info-header">
+            <h3>Hey!</h3>
             <h3>Welcome to my home page.</h3>
             <p>I'm Atte, a 22-year-old computer science student from Finland.</p>
             <p>On this page, you can find basic information about me.</p>
@@ -23,7 +32,7 @@
             
             <h3>Education</h3>
             <p>I completed my high school studies at Schildt High School with a focus on sports and graduated in 2021.</p>
-            <p>I am currently in my final year at Gradia, pursuing a basic degree in information and communication technology, and I will graduate as a software developer.</p>
+            <p>I am currently in my final year at Gradia, pursuing a basic degree in information and communication technology, and I will be graduating in the spring of 2024 as a software developer.</p>
             
             <hr>
 
@@ -57,6 +66,8 @@
     <div class="footer">
         <p class="footer-text">©2023 All rights reserved.</p>
     </div>
+
+
 
 </body>
 </html>
