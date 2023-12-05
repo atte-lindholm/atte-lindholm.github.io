@@ -157,6 +157,10 @@ body {
         font-size: 14px;
     }
 
+    .page-info {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
     .menu a {
         padding: 10px;
         font-size: 14px;
