@@ -95,7 +95,7 @@ body {
     padding: 5px;
     z-index: 2;
     margin-top: auto;
-    
+    width: 100%;
 }
 
 .secondary-footer {
@@ -106,14 +106,22 @@ body {
     z-index: 2;
     width: 100%;
     display: flex;
-    align-items: flex-start; /* Vertically align items at the top */
+    align-items: flex-start;
     margin-top: auto;
+    flex-direction: row; /* Change to row to place items side by side */
 
+    /* Updated order of items */
+    .contact-info {
+        flex: 1; /* Takes up remaining space on the left */
+    }
+
+    .instagram-post {
+        margin-right: 50px;
+
+    }
 }
 
-.contact-info {
-    flex: 1; /* Takes up remaining space on the left */
-}
+
 
 .contact-info h3 {
     font-size: 24px;
@@ -132,8 +140,35 @@ body {
     padding-right: 20px; /* Add some space to separate from the Instagram post */
 }
 
-.instagram-post {
-    margin-right: 50px;
 
 
+/* Add these styles at the end of your existing CSS */
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        right: 0;
+    }
+
+    .page-info h3 {
+        font-size: 18px;
+    }
+
+    .page-info p {
+        font-size: 14px;
+    }
+
+    .menu a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .secondary-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .footer, .secondary-footer {
+        width: 100%;
+    }
 }
