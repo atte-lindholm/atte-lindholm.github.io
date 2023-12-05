@@ -1,14 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
     overflow-x: hidden;
     background-image: url("./images/defqon_red.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    background-attachment: fixed;
 }
 
 
@@ -19,7 +18,6 @@ body {
     border: 20px solid transparent;
     text-align: left;
     margin: 40px;
-    margin-right: 60px;
     flex: 1;
 }
 
@@ -52,7 +50,6 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 5px;
     z-index: 2;
     margin-top: auto;
 }
@@ -61,25 +58,23 @@ body {
     background-color: #333;
     color: #fff;
     text-align: left;
-    padding: 20px;
-    padding-right: 0px;
     z-index: 2;
     width: 100%;
     display: flex;
     align-items: flex-start;
     margin-top: auto;
-    flex-direction: row; /* Change to row to place items side by side */
+    flex-direction: row;
 
-    /* Updated order of items */
+
 }
 
 
 .contact-info{
-    padding-bottom: 20px;
+    margin: 20px;
 }
 
 .instagram-post {
-    margin-right: 50px;
+    margin: 50px;
 
 }
 
@@ -100,19 +95,17 @@ body {
     padding-right: 20px; /* Add some space to separate from the Instagram post */
 }
 
+.instagram-post {
+    margin-left: auto; /* Move the Instagram post to the right */
+}
+
 
 
 @media only screen and (max-width: 600px) {
     .page-info {
-        margin: 10px; /* Adjust margin for smaller screens */
-        margin-right: 0; /* Remove or adjust the right margin for smaller screens */
+        margin: 10px;
     }
     
-    .menu {
-        width: 100%;
-        right: 0;
-    }
-
     .page-info h3 {
         font-size: 18px;
     }
@@ -121,10 +114,6 @@ body {
         font-size: 14px;
     }
 
-    .menu a {
-        padding: 10px;
-        font-size: 14px;
-    }
 
     .footer,
     .secondary-footer {
