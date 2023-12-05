@@ -19,5 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const body = document.querySelector("body");
 
+    menuIcon.addEventListener("click", function () {
+        body.classList.toggle("body-no-scroll");
+    });
+});
 

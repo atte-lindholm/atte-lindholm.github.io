@@ -11,6 +11,10 @@ body {
     background-attachment: fixed;
 }
 
+.body-no-scroll {
+    overflow: hidden;
+}
+
 
 .page-info {
     background-color: rgba(51, 51, 51, 0.8);
