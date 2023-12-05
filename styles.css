@@ -17,9 +17,8 @@ body {
     color: #ffffff;
     border: 20px solid transparent;
     text-align: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 40px;
+    margin-right: 60px;
     flex: 1;
 }
 
@@ -171,4 +170,6 @@ body {
     .footer, .secondary-footer {
         width: 100%;
     }
+
+    
 }
