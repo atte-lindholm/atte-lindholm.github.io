@@ -29,8 +29,9 @@ body {
 .menu-icon {
     position: fixed;
     top: 10px;
-    right: 10px;
-    font-size: 24px;
+    right: 0px;
+    font-size: 34px;
+    padding: 7px;
     cursor: pointer;
     z-index: 4;
     color: #fff;
