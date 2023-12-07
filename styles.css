@@ -5,7 +5,6 @@ body {
     background-image: url("./images/defqon_red.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -36,7 +35,7 @@ body {
     z-index: 4;
     color: #fff;
     background-color: rgba(34, 34, 34, 0.8);
-    transition: right 0.5s ease; /* Added transition property */
+    transition: right 0.5s ease;
 }
 
 .sidebar a {
@@ -127,6 +126,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        background-size: auto;
+    }
+
     .page-info {
         margin: 10px;
     }
